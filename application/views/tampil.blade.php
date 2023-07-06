@@ -54,7 +54,7 @@
             <td>{{ $post->jenis}}</td>
             <td>{{ $post->created_at }}</td>
             <td>{{ $post->updated_at }}</td>
-            <td><a href="{{ site_url('Welcome/hapus/'.$post->id)}}">Hapus</a> | <a href="{{ site_url('Welcome/ubah/'.$post->id) }}">Ubah</a></td>
+            <td><button type="button" class="btn btn-info"><a style="text-color=black" href="{{ site_url('Welcome/hapus/'.$post->id)}}">Hapus</a> </button><button type="button" class="btn btn-danger"> <a href="{{ site_url('Welcome/ubah/'.$post->id) }}">Ubah</a></button></td>
           </tr>
           @endforeach
         </table>
