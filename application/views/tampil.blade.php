@@ -39,6 +39,7 @@
         <table class="table table-bordered">
           <tr>
             <th>Username</th>
+            <th>Email</th>
             <th>Artikel</th>
             <th>Jenis</th>
             <th>Created_at</th>
@@ -48,6 +49,7 @@
           @foreach($post_list as $post)
           <tr>
             <td>{{ $post->user->username }}</td>
+            <td>{{ $post->user->email }}</td>
             <td>{{ $post->article }}</td>
             <td>{{ $post->jenis}}</td>
             <td>{{ $post->created_at }}</td>
